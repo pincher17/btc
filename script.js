@@ -16,14 +16,16 @@
         async function getResponseData() {
         param1 = date1.value;
         let param2 = param1;
-        if(param1 != undefined ){
+        
         let dataResponse = await fetch('https://api.coindesk.com/v1/bpi/historical/close.json' + '?start=' + param1 + '&end=' + param2);
         let dataContent = await dataResponse.json();
         console.log(dataContent);
+        
         bitc.insertAdjacentHTML('afterEnd', `<h2>Стоимость биткоина ${param1}: ${content.bpi.USD.symbol} ${dataContent.bpi[param1]}</h2>`);
         
-        }
+        
        };
+       
        btn.addEventListener('click', getResponseData);
        
        
