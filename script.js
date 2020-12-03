@@ -12,7 +12,10 @@
         let bitc = document.getElementById('bitcoin');
         let date1 = document.getElementById("date1");
         let btn = document.getElementById("btn");
-        
+        let historicBtc = document.getElementById("historicBtc");
+        let inputPrice = document.getElementById("inputPrice");
+        let priceTextData = document.getElementById("priceTextData");
+
         let count = 0;
 
         async function getResponseData() {
@@ -22,13 +25,14 @@
         let dataResponse = await fetch('https://api.coindesk.com/v1/bpi/historical/close.json' + '?start=' + param1 + '&end=' + param2);
         let dataContent = await dataResponse.json();
         console.log(dataContent);
+        inputPrice.value ='$ '+dataContent.bpi[param1];
         
-        while (true) {
+       /*  while (true) {
             if(count === 0){
                 
-                bitc.insertAdjacentHTML('beforeend', `<h2 id="priceData">Стоимость биткоина ${param1}: ${content.bpi.USD.symbol} ${dataContent.bpi[param1]}</h2>`);
+                historicBtc.insertAdjacentHTML('beforeend', `<p id="priceData">Стоимость биткоина ${param1}: ${content.bpi.USD.symbol} ${dataContent.bpi[param1]}</p>`);
                 count+=1;
-               
+                inputPrice.value ='$ '+dataContent.bpi[param1];
                 break;
             }else{
                 
@@ -41,7 +45,7 @@
                 
             }
             
-        }
+        } */
        
         
         

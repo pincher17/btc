@@ -1,0 +1,41 @@
+body{
+font-size: 16px;
+}
+
+
+.historic_div{
+    width: 20em;
+    padding: 1em 1em;
+    border: 0.15em solid rgb(24, 24, 24);
+}
+
+.history__heading{
+    font-size: 1.5em;
+    margin-top: 0em;
+}
+
+.change_date{
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.btn_date{
+    width: 13.3em;
+    height: 1.7em;
+    margin-top: 0.8em;
+    cursor: pointer;
+    background-color: rgb(24, 24, 24);
+    color: rgb(226, 226, 226);
+    border: none;
+}
+
+.input_date{
+    height: 1.4em;
+    width: 13em;
+    border: 0.14em solid rgb(24, 24, 24);
+}
+
+.input_price{
+    height: 1.233em;
+    border: 0.14em solid rgb(24, 24, 24);
+}
