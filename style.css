@@ -21,7 +21,7 @@ font-size: 16px;
 
 .btn_date{
     width: 13.3em;
-    height: 1.7em;
+    height: 2.4em;
     margin-top: 0.8em;
     cursor: pointer;
     background-color: rgb(24, 24, 24);
@@ -30,12 +30,12 @@ font-size: 16px;
 }
 
 .input_date{
-    height: 1.4em;
+    height: 2.1em;
     width: 13em;
     border: 0.14em solid rgb(24, 24, 24);
 }
 
 .input_price{
-    height: 1.233em;
+    height: 1.8em;
     border: 0.14em solid rgb(24, 24, 24);
 }
