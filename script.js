@@ -13,6 +13,8 @@
         let date1 = document.getElementById("date1");
         let btn = document.getElementById("btn");
         
+        let count = 0;
+
         async function getResponseData() {
         param1 = date1.value;
         let param2 = param1;
@@ -21,7 +23,26 @@
         let dataContent = await dataResponse.json();
         console.log(dataContent);
         
-        bitc.insertAdjacentHTML('afterEnd', `<h2>Стоимость биткоина ${param1}: ${content.bpi.USD.symbol} ${dataContent.bpi[param1]}</h2>`);
+        while (true) {
+            if(count === 0){
+                
+                bitc.insertAdjacentHTML('beforeend', `<h2 id="priceData">Стоимость биткоина ${param1}: ${content.bpi.USD.symbol} ${dataContent.bpi[param1]}</h2>`);
+                count+=1;
+               
+                break;
+            }else{
+                
+                let priceData = document.getElementById("priceData").remove();
+                //priceData.innerHTML = '';
+               // bitc.insertAdjacentHTML('beforeend', `<h2id="priceData"></h2id=>`);
+                
+                count-=1;
+                continue;
+                
+            }
+            
+        }
+       
         
         
        };
