@@ -97,7 +97,7 @@
            let sumBuy = inputSumBuy.value;
            let countMoneyPast = sumBuy / pricePast;
            let countMoneyNow = countMoneyPast *  pricePast2;
-           inputMoneyEnd.value = '$' + countMoneyNow.toFixed(2);
+           inputMoneyEnd.value = '$ ' + countMoneyNow.toFixed(2);
 
             
         }
