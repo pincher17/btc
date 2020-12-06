@@ -1,23 +1,34 @@
 body{
 font-size: 16px;
+font-family: 'Roboto', sans-serif;
 }
 
+h1{
+    color: #2f2f2f;
+}
+
+h2{
+    color: #2f2f2f;
+}
 
 .historic_div{
     margin-bottom: 1em;
     max-width: 20em;
     padding: 1em 1em;
-    border: 0.15em solid rgb(24, 24, 24);
+   /*  border: 0.15em solid rgb(63, 63, 63); */
+    box-shadow: 0 5px 20px #bbbbbb6e;
 }
 
 .history__heading{
     font-size: 1.5em;
     margin-top: 0em;
+    color: #2f2f2f;
 }
 
 .change_date{
     font-size: 1.2em;
     margin-bottom: 0.5em;
+    color: #2f2f2f;
 }
 
 .btn_date{
@@ -33,10 +44,12 @@ font-size: 16px;
 .input_date{
     height: 2.1em;
     width: 13em;
-    border: 0.14em solid rgb(24, 24, 24);
+    border: 0.14em solid rgb(107, 107, 107);
+    
+    
 }
 
 .input_price{
     height: 1.8em;
-    border: 0.14em solid rgb(24, 24, 24);
+    border: 0.14em solid rgb(107, 107, 107);
 }
