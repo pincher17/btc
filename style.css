@@ -17,6 +17,7 @@ h2{
     padding: 1em 1em;
    /*  border: 0.15em solid rgb(63, 63, 63); */
     box-shadow: 0 5px 20px #bbbbbb6e;
+    
 }
 
 .history__heading{
@@ -45,12 +46,12 @@ h2{
     height: 2.1em;
     width: 13em;
     border: 0.14em solid rgb(107, 107, 107);
-    background: rgb(255 255 255);
+    background: rgba(255, 255, 255, 0);
     
 }
 
 .input_price{
     height: 1.8em;
     border: 0.14em solid rgb(107, 107, 107);
-    background: rgb(255 255 255);
+    background: rgba(255, 255, 255, 0);
 }
