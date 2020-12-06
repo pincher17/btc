@@ -45,11 +45,12 @@ h2{
     height: 2.1em;
     width: 13em;
     border: 0.14em solid rgb(107, 107, 107);
-    
+    background: rgb(255 255 255);
     
 }
 
 .input_price{
     height: 1.8em;
     border: 0.14em solid rgb(107, 107, 107);
+    background: rgb(255 255 255);
 }
