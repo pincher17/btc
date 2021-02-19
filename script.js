@@ -62,7 +62,7 @@
        
        
         
-        
+       async function getCurrencyNow{ 
        let response = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
       
        let content = await response.json();
@@ -73,8 +73,9 @@
         bitc.insertAdjacentHTML('afterEnd', `<h2>${content.time.updated}</h2>`);
 
         let currencyNow = content.bpi.USD.rate;
+        setTimeout(getCurrencyNow, 30000);
 
-
+}
 
         async function getResponseSell() {
             param1Sell = dateBuy.value;
