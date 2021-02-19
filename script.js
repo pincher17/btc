@@ -76,7 +76,7 @@
         setTimeout(getCurrencyNow, 30000);
 
 }
-
+      getCurrencyNow();
         async function getResponseSell() {
             param1Sell = dateBuy.value;
             let param2Sell = param1Sell;
